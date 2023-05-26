@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+	  layout:decorate="~{common/layout}">
+	<div layout:fragment="content">
+		<ul>
+			<h2>회원</h2>
+			<li><a th:href="@{/member/register}">회원가입</a></li>
+			<li>로그인</li>
+			<h2>게시판</h2>
+			<li>글쓰기</li>
+			<li>글목록 - 여기서 글 보고 수정, 삭제</li>
+		</ul>
+	</div>
+</html>
