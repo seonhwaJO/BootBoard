@@ -1,22 +1,13 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
-<head>
-<meta charset="UTF-8">
-<title th:text="${headTitle}"></title>
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:replace="common/head::commonHead">
 </head>
 <body>
-	<!-- Header -->
-	<div layout:fragment="header">
-		<th:block th:replace="common/header :: header"></th:block>
-	</div>
-	
-	<!-- Content -->
-	<div layout:fragment="content"></div>
-	
-	<!-- Footer -->
-	<div layout:fragment="footer">
-		<th:block th:replace="common/footer :: footer"></th:block>
+	<div class="container">
+		<div th:replace="common/header :: commonHeader"></div>
+		<div layout:fragment="content"></div>
+		<div th:replace="common/footer :: commonFooter"></div>
 	</div>
 </body>
 </html>

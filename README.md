@@ -5,9 +5,9 @@
 - [ ] 회원가입 ID 중복처리 
 - [ ] 타임리프 PW중복처리
 - [ ] id,pw valid 추가 
-- [ ] autowired 생성자로 변경
-- [ ] dao Exception Service로 빼기
-- [ ] Try-Resources 처리
+- [x] autowired 생성자로 변경
+- [x] dao Exception Service로 빼기
+- [x] Try-Resources 처리
 ### 1-2 회원정보보기  
 - [ ] 
 ### 1-3 회원정보수정(보기에서) 

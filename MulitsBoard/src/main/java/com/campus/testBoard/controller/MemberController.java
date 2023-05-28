@@ -14,9 +14,12 @@ import com.campus.testBoard.service.MemberService;
 @RequestMapping("/member")
 public class MemberController {
 	
-	@Autowired
-	private MemberService memberService;
+	private final MemberService memberService;
 	
+	@Autowired
+	public MemberController(MemberService memberService) {	// 주입 생성자로 변경
+		this.memberService = memberService;
+	}
 	@GetMapping("/register")
 	public String register(Model model) {
 		model.addAttribute("headTitle","회원가입");
