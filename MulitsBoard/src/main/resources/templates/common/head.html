@@ -4,9 +4,11 @@
 	<head th:fragment="commonHead">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, inital-scale=1.0" />
-		<title>Template-SpringBoot</title>
+		<title th:text="${headTitle}"></title>
 		<link th:href="@{/webjars/bootstrap/5.2.3/css/bootstrap.min.css}" rel="stylesheet"></link>
 		<script th:src="@{/webjars/jquery/3.6.4/jquery.min.js}"></script>
-		<th:block layout:fragment="custom_css"></th:block>
+		<link th:href="@{/static/css/custom.css}" rel="stylesheet" />
+		<script th:src="@{/static/js/register.js}"></script>
+		<script th:src="@{/static/js/login.js}"></script>
 	</head>
 </html>
