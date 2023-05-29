@@ -2,14 +2,41 @@
 <html xmlns:th="http://www.thymeleaf.org"
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
 	layout:decorate="~{common/layout}">
-	<div layout:fragment="content">
-		<ul>
-			<h2>회원</h2>
-			<li><a th:href="@{/member/register}">회원가입</a></li>
-			<li>로그인</li>
-			<h2>게시판</h2>
-			<li>글쓰기</li>
-			<li>글목록 - 여기서 글 보고 수정, 삭제</li>
-		</ul>
+<div layout:fragment="content" >
+	<div class="p-4 p-md-5 mb-4 rounded" style="text-align: center; background: url(https://spring.io/img/springone.svg); background-repeat: no-repeat; background-position: center; background-size: cover;">
+		<div style="text-align: center;">
+			<h1>선화's 게시판</h1>
+			<p>게시판 과제 현재 구현중에 있어요.<br> 
+			이것저것 해봤어요<br> 
+			jsp보다 타임리프가 훨씬 편하네요 ㅎㅎ</p>
+			
+			
+			<div style="border: 1px solid black; padding: 10px; display: inline-block;">
+				<a href="#" class="text-dark fw-bold" style="text-decoration: none;">눌러도 아무데도 가지 않죠</a>
+			</div>
+		</div>
 	</div>
+	<div style="background-color: #f2f2f2; padding:30px;">
+		<h4>2023.05.26 구현사항</h4>
+		<ul>
+			<li>회원가입</li>
+		</ul>
+		<h4>2023.05.28 구현사항</h4>
+		<ul>
+			<li>타임리프 레이아웃 제대로</li>
+			<li>회원가입 폼</li>
+		</ul>
+		<h4>2023.05.29 구현사항</h4>
+		<ul>
+			<li>회원가입 - front단 유효성검사</li>
+			<li>로그인, 로그아웃 - 세션과 함께</li>
+		</ul>
+		<h4>2023.05.30 구현사항 - 예정</h4>
+		<ul>
+			<li>스프링시큐리티 적용</li>
+			<li>백엔드 유효성 적용</li>
+		</ul>
+	
+	</div>
+</div>
 </html>
